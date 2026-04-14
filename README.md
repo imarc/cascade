@@ -1,4 +1,4 @@
-# imarc/cascade
+# Cascade
 
 Cascading soft deletes for Laravel Eloquent. When a parent model is soft-deleted, related models are soft-deleted. When the parent is restored, **all** currently trashed rows for those relations are restored one-by-one so `restored` events run (nested cascades work). This still restores every trashed child for that foreign key, not only rows deleted in the same cascade as the parent.
 
