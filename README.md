@@ -4,16 +4,16 @@ Cascading soft deletes for Laravel Eloquent. When a parent model is soft-deleted
 
 ## Usage
 
-Use Laravel’s `SoftDeletes` and this package’s `CascadesSoftDeletes` on the parent. List relationship method names to cascade:
+Use Laravel’s `SoftDeletes` and this package’s `CascadeSoftDeletes` on the parent. List relationship method names to cascade:
 
 ```php
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Imarc\Cascade\CascadesSoftDeletes;
+use Imarc\Cascade\CascadeSoftDeletes;
 
 class Post extends Model
 {
-    use CascadesSoftDeletes, SoftDeletes;
+    use CascadeSoftDeletes, SoftDeletes;
 
     /** @var list<string> */
     protected array $cascadeSoftDeletes = ['comments'];

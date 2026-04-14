@@ -12,9 +12,9 @@ use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-trait CascadesSoftDeletes
+trait CascadeSoftDeletes
 {
-    public static function bootCascadesSoftDeletes(): void
+    public static function bootCascadeSoftDeletes(): void
     {
         static::deleting(function (Model $model): void {
             if ($model->isForceDeleting()) {

@@ -7,11 +7,11 @@ namespace Imarc\Cascade\Tests\Fixtures;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Imarc\Cascade\CascadesSoftDeletes;
+use Imarc\Cascade\CascadeSoftDeletes;
 
 class Category extends Model
 {
-    use CascadesSoftDeletes, SoftDeletes;
+    use CascadeSoftDeletes, SoftDeletes;
 
     protected $guarded = [];
 

@@ -12,7 +12,7 @@ use Imarc\Cascade\Tests\Fixtures\Image;
 use Imarc\Cascade\Tests\Fixtures\Post;
 use Imarc\Cascade\Tests\Fixtures\Tag;
 
-class CascadesSoftDeletesTest extends TestCase
+class CascadeSoftDeletesTest extends TestCase
 {
     use RefreshDatabase;
 
